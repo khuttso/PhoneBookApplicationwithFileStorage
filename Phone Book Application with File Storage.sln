@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Phone Book Application with File Storage", "Phone Book Application with File Storage\Phone Book Application with File Storage.csproj", "{FFB2A8A2-072D-47E1-B4A0-6BBD68BD26BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FFB2A8A2-072D-47E1-B4A0-6BBD68BD26BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFB2A8A2-072D-47E1-B4A0-6BBD68BD26BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFB2A8A2-072D-47E1-B4A0-6BBD68BD26BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFB2A8A2-072D-47E1-B4A0-6BBD68BD26BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

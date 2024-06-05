@@ -1,0 +1,17 @@
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Phone Book Application with File Storage.exe
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Phone Book Application with File Storage.deps.json
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Phone Book Application with File Storage.runtimeconfig.json
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Phone Book Application with File Storage.dll
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Phone Book Application with File Storage.pdb
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.AssemblyInfoInputs.cache
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.AssemblyInfo.cs
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.csproj.CoreCompileInputs.cache
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.dll
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\refint\Phone Book Application with File Storage.dll
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.pdb
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.genruntimeconfig.cache
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\ref\Phone Book Application with File Storage.dll
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.csproj.AssemblyReference.cache
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Bo.8ED88CCB.Up2Date
