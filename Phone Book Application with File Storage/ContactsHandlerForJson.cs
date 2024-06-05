@@ -13,7 +13,6 @@ using Newtonsoft.Json;
 ///     Class is written for Json file and all the cases(other file type) that may cause error are handled
 /// </summary>
 
-
 public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
 {
     private readonly string path; 

@@ -10,7 +10,7 @@ using Newtonsoft.Json;
 public class PhoneBook
 {
     private Dictionary<string, Contact> _contacts;  
-    private const string path = "C:\\Users\\asusVivo\\RiderProjects\\Phone Book Application with File Storage\\Phone Book Application with File Storage\\contacts.json";
+    private const string path = "contacts.json";
     private IContactsHandlerForFile<Contact> _handlerForFile;
     private IValidation _validationHandler;
     
