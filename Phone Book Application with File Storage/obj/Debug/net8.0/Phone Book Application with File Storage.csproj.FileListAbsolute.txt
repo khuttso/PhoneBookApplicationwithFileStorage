@@ -15,3 +15,4 @@ C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone B
 C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.csproj.AssemblyReference.cache
 C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Bo.8ED88CCB.Up2Date
+C:\Users\asusVivo\RiderProjects\Phone Book Application with File Storage\Phone Book Application with File Storage\obj\Debug\net8.0\Phone Book Application with File Storage.sourcelink.json

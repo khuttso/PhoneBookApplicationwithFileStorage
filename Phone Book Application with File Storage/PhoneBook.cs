@@ -58,8 +58,8 @@ public class PhoneBook
             throw new ArgumentException("Invalid name");
         }
 
-        _contacts.Remove(name);
         _handlerForFile.RemoveFromFile(_contacts[name]);
+        _contacts.Remove(name);
     }
     
     

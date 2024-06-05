@@ -1,3 +1,5 @@
+using System.Collections;
+
 namespace Phone_Book_Application_with_File_Storage;
 using Newtonsoft.Json;
 
@@ -48,10 +50,16 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
      */
     public void AddToFile(Contact obj)
     {
-        string serializedContact = JsonConvert.SerializeObject(obj);
+        string readJsonData = File.ReadAllText(path);
+        List<Contact> contacts = JsonConvert.DeserializeObject<List<Contact>>(readJsonData);
+        if (contacts == null) contacts = new List<Contact>();
+        
+        contacts.Add(obj);
+        string serializedContacts = JsonConvert.SerializeObject(contacts);
+        Clear();
         using (StreamWriter sw = new StreamWriter(path, true))
         {
-            sw.WriteLine(serializedContact);                        
+            sw.WriteLine(serializedContacts);                        
         }
     }
 
@@ -73,11 +81,10 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
         contacts.RemoveAll(c => c.Equals(obj));
         
         this.Clear();
-        
-        StreamWriter sw = new StreamWriter(path);
-        foreach (Contact c in contacts)
+
+        using (StreamWriter sw = new StreamWriter(path, true)) 
         {
-            sw.WriteLine(JsonConvert.SerializeObject(c));
+            sw.WriteLine(JsonConvert.SerializeObject(contacts));
         }
     }
 

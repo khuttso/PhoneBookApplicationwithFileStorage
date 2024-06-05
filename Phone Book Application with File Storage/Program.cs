@@ -18,7 +18,7 @@ public class Program
 
         Contact c = new Contact("asd","+995599310860");
         Contact c2 = new Contact("as1","+995599310861");
-        Contact c3= new Contact("asd2","+995599310862");
+        Contact c3 = new Contact("asd2","+995599310862");
         Contact c4 = new Contact("asd3","+995599310863");
         Contact c5 = new Contact("asd4","+995599310864");
         PhoneBook phoneBook = new PhoneBook();
@@ -27,6 +27,20 @@ public class Program
         phoneBook.AddContact(c2.Name, c2.PhoneNumber);
         phoneBook.AddContact(c4.Name, c4.PhoneNumber);
         phoneBook.AddContact(c5.Name, c5.PhoneNumber);
+        
+        phoneBook.LoadContacts();
+
+        Console.WriteLine("-----------------------------");
+        phoneBook.RemoveContact(c.Name);
+        phoneBook.RemoveContact(c4.Name);
+        Console.WriteLine("_________________________________");
+        foreach (var listContact in phoneBook.ListContacts())
+        {
+            Console.WriteLine(listContact);
+        }
+
+        Console.WriteLine("_______________________________");
+        phoneBook.LoadContacts();
         
         
         string path =
