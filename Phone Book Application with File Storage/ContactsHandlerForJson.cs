@@ -3,27 +3,31 @@ using System.Collections;
 namespace Phone_Book_Application_with_File_Storage;
 using Newtonsoft.Json;
 
-/*
- * Class ContactsHandlerForJson - class based on IContactsHandledForFile.
- * interface methods are implemented for Json file.
- *
- * JsonConvert.SerializeObject(...); and JsonConvert.DeserializeObject(...); methods of the package
- * Newtonsoft.Json are used to do standard serialization of the data;
- *
- * Class is written for Json file and all the cases(other file type) that may cause error are handled
- * 
- */
+/// <summary>
+///     class <c>ContactsHandlerForJson</c>> - class based on IContactsHandledForFile.
+///     interface methods are implemented for Json file.
+///
+///     JsonConvert.SerializeObject(...); and JsonConvert.DeserializeObject(...); methods of the package
+///     Newtonsoft.Json are used to do standard serialization of the data
+///
+///     Class is written for Json file and all the cases(other file type) that may cause error are handled
+/// </summary>
+
 
 public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
 {
     private readonly string path; 
 
     
-    
-    /*
-     * Constructor receives string path, which is supposed to be Json file location.
-     * Here is simply checked if the path is incompatible for format Json
-     */
+    /// <summary>
+    ///     Constructor receives string path, which is supposed to be Json file location
+    ///     Here is simply checked if the path is incompatible for format Json      
+    /// </summary>
+    /// <param name="path"></param>
+    /// <exception cref="ArgumentException"></exception>
+    ///    thrown when given path is incompatible with format json
+    /// <exception cref="FileNotFoundException"></exception>
+    ///    thrown when the file with given path does not exist 
     public ContactsHandlerForJson(string path)
     {
         if (path.Substring(path.Length-5) != ".json")
@@ -40,14 +44,13 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
     }
     
     public string Path { get; }
+
     
-    
-    
-    
-    /*
-     *  By calling AddToFile(obj) - Based on task description Serialized data of obj
-     *  is added into the file
-     */
+
+    /// <summary>
+    ///     By calling AddToFile(obj) - Based on task description Serialized data of obj is added into the file
+    /// </summary>
+    /// <param name="obj"></param>
     public void AddToFile(Contact obj)
     {
         string readJsonData = File.ReadAllText(path);
@@ -63,16 +66,15 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
         }
     }
 
-    
-    
-    
-    /*
-     *  RemoveFromFile(obj) removes object from the file by using following steps:
-     *  Reads data from the file.
-     *  Deserializes read data and stores in collection.
-     *  Removes Data From the collection
-     *  Writes updated data into the file
-     */
+
+    /// <summary>
+    ///     RemoveFromFile(obj) removes object from the file by using following steps:
+    ///         1. Reads data from the file
+    ///         2. Deserializes read data and stores in collection
+    ///         3. Removes data from the collection
+    ///         4. Writes updated data into the file
+    /// </summary>
+    /// <param name="obj"></param>
     public void RemoveFromFile(Contact obj)
     {
         // making list of contact objects from Json file
@@ -88,12 +90,10 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
         }
     }
 
-    
-    
-    
-    /*
-     * List() - deserializes json data and returns it as list 
-     */
+    /// <summary>
+    ///        List() - deserializes json data and returns it as list 
+    /// </summary>
+    /// <returns></returns>
     public List<Contact> List()
     {
         string jsonData = File.ReadAllText(path);
@@ -102,20 +102,25 @@ public class ContactsHandlerForJson : IContactsHandlerForFile<Contact>
 
     
     
-    
+    /// <summary>
+    ///     Load() - iterates over deserialized data and print
+    /// </summary>
     /*
      *  Load() - iterates over deserialized data and print
      */
     public void Load()
     {
+        Console.WriteLine("Current Contacts in Phone book:");
         foreach (Contact c in List()) 
         {
             Console.WriteLine(c.ToString());
         }
     }
 
-    
-    
+        
+    /// <summary>
+    ///     Clear() - simply clears the file
+    /// </summary>
     public void Clear()
     {
         File.WriteAllText(path, "");

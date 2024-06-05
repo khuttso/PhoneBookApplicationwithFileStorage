@@ -2,12 +2,13 @@ using Newtonsoft.Json;
 
 namespace Phone_Book_Application_with_File_Storage;
 using System.Text.Json;
-/*
- *  Data class contact with attributes: string name, string phoneNumber
- *  Because of Data class, the methods int GetHashCode(), bool Equals(Object? obj), ToString()
- *  are overrided here and fields name and phoneNumber are readonly.
- *  
- */
+
+/// <summary>
+///     Data class <c>Contact</c>> with attributes: string name, string phoneNumber
+///     Because of Data class, the methods int GetHashCode(), bool Equals(Object? obj), ToString()
+///     are overrided here and fields name and phoneNumber are readonly    
+/// </summary>
+/// 
 public class Contact
 {
     private readonly string name;
